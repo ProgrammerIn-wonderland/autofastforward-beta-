@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import dosse.upnp.UPnP;
+import javafx.scene.control.TextField;
 /**
  *
  * @author niris
@@ -20,20 +21,23 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Label label;
-    
+    @FXML
+    TextField portbox;
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
-        UPnP.openPortTCP(25565);
-        UPnP.openPortUDP(25565);
-        label.setText("Opened Port 25565");
+        int integer = Integer.parseInt(portbox.getText());
+        UPnP.openPortTCP(integer);
+        UPnP.openPortUDP(integer);
+        label.setText("Opened Port " + integer);
     }
     @FXML
     private void handleButtonAction2(ActionEvent event) {
         System.out.println("You clicked me!");
-        UPnP.closePortTCP(25565);
-        UPnP.closePortUDP(25565);
-        label.setText("Closed Port 25565");
+        int integer = Integer.parseInt(portbox.getText());
+        UPnP.closePortTCP(integer);
+        UPnP.closePortUDP(integer);
+        label.setText("Closed Port " + integer);
     }
     
     @Override
