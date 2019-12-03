@@ -1,4 +1,0 @@
-name: autofastforward
-main: com.mycompany.autofastforwardbeta.Main
-version: 0.2.1
-description: A plugin to automatically port forward

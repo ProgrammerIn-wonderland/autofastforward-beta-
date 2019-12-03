@@ -1,0 +1,23 @@
+[14:10:40] [Server thread/INFO]: Starting minecraft server version 1.8
+[14:10:40] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[14:10:40] [Server thread/INFO]: Loading properties
+[14:10:40] [Server thread/WARN]: server.properties does not exist
+[14:10:40] [Server thread/INFO]: Generating new properties file
+[14:10:40] [Server console handler/ERROR]: Exception handling console input
+java.io.IOException: The handle is invalid
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:1.8.0_221]
+	at java.io.FileInputStream.read(Unknown Source) ~[?:1.8.0_221]
+	at java.io.BufferedInputStream.fill(Unknown Source) ~[?:1.8.0_221]
+	at java.io.BufferedInputStream.read(Unknown Source) ~[?:1.8.0_221]
+	at org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:248) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:261) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:198) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLineSimple(ConsoleReader.java:3183) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2333) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2269) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2257) ~[spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+	at net.minecraft.server.v1_8_R1.ThreadCommandReader.run(ThreadCommandReader.java:35) [spigot-1.8-R0.1-SNAPSHOT.jar:git-Spigot-c3c767f-33d5de3]
+[14:10:40] [Server thread/WARN]: Failed to load eula.txt
+[14:10:40] [Server thread/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[14:10:40] [Server thread/INFO]: Stopping server

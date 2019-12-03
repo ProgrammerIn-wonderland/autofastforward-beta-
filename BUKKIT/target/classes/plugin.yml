@@ -1,0 +1,11 @@
+name: autofastforward
+main: com.mycompany.autofastforwardbeta.Main
+version: 0.2.1
+description: A plugin to automatically port forward
+commands:
+   pf:
+      description: port forward
+      usage: /pf "port"
+   unpf:
+      description: unport forward
+      usage: /unpf "port"
