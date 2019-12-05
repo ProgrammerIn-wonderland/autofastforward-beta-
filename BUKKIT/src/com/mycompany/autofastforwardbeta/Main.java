@@ -53,3 +53,13 @@ public class Main
     UPnP.openPortTCP(getServer().getPort());
     System.out.println("Port " + getServer().getPort() + " forwarded.");
   }
+
+  
+  public void onDisable() {
+    System.out.println("unforwarding");
+    
+    UPnP.closePortUDP(getServer().getPort());
+    UPnP.closePortTCP(getServer().getPort());
+    System.out.println("Port " + getServer().getPort() + " unforwarded.");
+  }
+}
