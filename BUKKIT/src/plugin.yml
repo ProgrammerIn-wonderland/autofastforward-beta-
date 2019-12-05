@@ -15,6 +15,6 @@ commands:
       permission-message: Ya crazy bud? ya tryin to un portforward the server
 permissions:
     badguy.op:
-        description: Allows you to kick a user
+        description: Portforwarding perms lol
         default: op
       
