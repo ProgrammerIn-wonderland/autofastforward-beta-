@@ -1,4 +1,4 @@
-package com.mycompany.autofastforwardbeta;
+package com.ourcompany.autofastforwardbeta;
 
 import dosse.upnp.UPnP;
 import java.io.BufferedReader;
