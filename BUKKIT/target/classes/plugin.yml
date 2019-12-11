@@ -6,6 +6,15 @@ commands:
    pf:
       description: port forward
       usage: /pf "port"
+      permission: badguy.op
+      permission-message: Y ya tryin to portforward without op huh
    unpf:
       description: unport forward
       usage: /unpf "port"
+      permission: badguy.op
+      permission-message: Ya crazy bud? ya tryin to un portforward the server
+permissions:
+    badguy.op:
+        description: Portforwarding perms lol
+        default: op
+      
